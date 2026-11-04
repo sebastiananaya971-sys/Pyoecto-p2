@@ -21,9 +21,7 @@ body {
     padding: 40px 20px;
 }
 
-/* ==========================================
-   2. ENCABEZADO Y NAVEGACIÓN (STICKY)
-   ========================================== */
+
 .main-header {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
@@ -90,9 +88,7 @@ body {
     width: 100%;
 }
 
-/* ==========================================
-   3. BANNER HÉROE (BIENVENIDA)
-   ========================================== */
+
 .hero-banner {
     background: linear-gradient(rgba(92, 29, 36, 0.4), rgba(92, 29, 36, 0.2)), 
                 url('https://unsplash.com') no-repeat center center/cover;
@@ -140,9 +136,7 @@ body {
     box-shadow: 0 6px 20px rgba(212, 163, 115, 0.4);
 }
 
-/* ==========================================
-   4. TITULARES DE SECCIÓN
-   ========================================== */
+
 .section-title {
     text-align: center;
     margin: 40px 0 30px 0;
@@ -162,9 +156,7 @@ body {
     margin: 10px auto 0 auto;
 }
 
-/* ==========================================
-   5. REJILLA Y TARJETAS DE NUEVA COLECCIÓN
-   ========================================== */
+
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -207,9 +199,6 @@ body {
     opacity: 1;
 }
 
-/* ==========================================
-   6. TARJETAS DE PRODUCTO (TIENDA)
-   ========================================== */
 .product-card {
     background-color: #ffffff;
     border-radius: 12px;
@@ -240,7 +229,7 @@ body {
     object-position: center;
 }
 
-/* Badges / Etiquetas flotantes */
+
 .badge {
     position: absolute;
     top: 15px;
@@ -293,9 +282,7 @@ body {
     background: linear-gradient(to right, transparent, #e3d5d4, transparent);
 }
 
-/* ==========================================
-   7. PIE DE PÁGINA (FOOTER EXCLUSIVO)
-   ========================================== */
+
 .main-footer {
     background-color: #1f1616;
     color: #e3d5d4;
