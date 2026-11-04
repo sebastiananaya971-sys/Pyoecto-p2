@@ -1,11 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
+><!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empresa Salgado</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px 10px 80px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        /* Cajas de Encabezado y Títulos */
+        .box-header {
+            border: 1.5px solid #000;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #fff;
+            width: 80%;
+        }
+
+        .box-header h1 {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .box-banner {
+            border: 1.5px solid #000;
+            background-color: #e0e0e0;
+            padding: 8px 15px;
+            text-align: center;
+            width: 95%;
+        }
+
+        .box-banner h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        /* Secciones de cuadrícula */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            width: 100%;
+        }
+
+        /* Tarjeta de imagen con ícono SVG */
+        .img-card {
+            background-color: #f0f0f0;
+            border: 1px solid #d0d0d0;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img-card .icon-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .img-card svg {
+            width: 55%;
+            height: 55%;
+            fill: #888888;
+        }
+
+        .img-card .blue-bar {
+            height: 8px;
+            width: 100%;
+            background-color: #0066b2;
+        }
+
+        /* Tarjetas del Catálogo */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .product-label {
+            font-size: 0.65rem;
+            font-weight: bold;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-box {
+            border: 1.5px solid #000;
+            padding: 4px 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #fff;
+        }
+
+        .product-box .black-square {
+            width: 14px;
+            height: 10px;
+            background-color: #000;
+        }
+
+        .product-box span {
+            font-size: 0.65rem;
+            font-weight: bold;
+        }
+
+        hr.divider {
+            width: 100%;
+            border: none;
+            border-top: 1.5px solid #ccc;
+            margin: 10px 0;
+        }
+
+        /* Footer de Redes Sociales */
+        .footer-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #e0e0e0;
+            border-top: 1.5px solid #000;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="box-header">
+            <h1>Empresa Salgado</h1>
+        </div>
+
+        <!-- Banner de Bienvenida -->
+        <div class="box-banner">
+            <h2>Bienvenidos a nuestra página web</h2>
+        </div>
+
+        <!-- Galería Principal -->
+        <div class="grid-3">
+            <div class="img-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
+                <div class="blue-bar"></div>
+            </div>
+            <div class="img-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
+                <div class="blue-bar"></div>
+            </div>
+            <div class="img-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
+                <div class="blue-bar"></div>
+            </div>
+        </div>
+
+        <!-- Título Catálogo -->
+        <div class="box-banner" style="width: 60%; margin-top: 10px;">
+            <h2>Nuestro catálogo:</h2>
+        </div>
+
+        <!-- Catálogo Fila 1 -->
+        <div class="grid-3">
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Algodón roja</span>
+                <div class="product-box">
+                    <div class="black-square"></div>
+                    <span>100% ALGODÓN</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Algodón azul100%</span>
+                <div class="product-box">
+                    <div class="black-square"></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Poliéster %</span>
+                <div class="product-box">
+                    <div class="black-square"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Catálogo Fila 2 -->
+        <div class="grid-3">
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Algodón roja</span>
+            </div>
+
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Algodón roja</span>
+            </div>
+
+            <div class="product-card">
+                <div class="img-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <div class="blue-bar"></div>
+                </div>
+                <span class="product-label">Tanga 100% Algodón roja</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer-banner">
+        Aquí puedes encontrar nuestras redes sociales
+    </div>
+
 </body>
 </html>
