@@ -331,7 +331,7 @@ body {
 
 .facebook { background-color: #3b5998; }
 .instagram { background-color: #c13584; }
-.whatsapp { background-color: #25d366; }
+.whatsapp { background-color: #00fd5d; }
 
 .copyright {
     font-size: 0.8rem;
@@ -339,3 +339,71 @@ body {
     border-top: 1px solid #2d2222;
     padding-top: 20px;
 }
+        body {
+            background-color: #0b111e; 
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .community-section {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+        }
+
+        .community-section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.2rem;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .community-section p {
+            color: #a0aec0;
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-social {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn-social:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .btn-facebook {
+            background-color: #1877f2; 
+        }
+
+        .btn-instagram {
+            background-color: #d62976; /
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
